@@ -154,7 +154,7 @@
       <p>
         Yläpuolella olevista kuvista saa yleiskäsityksen siitä, mitä olen tehnyt
         projektin aikana. Työskentelin mm. allergia-valikon, latausnäkymän,
-        alert-ilmoituksen ja tulosnäkymän parissa. Alert-ilmoitusta on kokonaan
+        alert-ilmoituksen ja tulosnäkymän parissa. Alert-ilmoitus on kokonaan
         minun tekemä, sekä latausnäkymä. Latausnäkymän tekoa varten tarvitsin
         tosin tutoriaalin. Allergia-valikko on pääasiassa minun tekemä, sekä
         pohja tulosnäkymälle. Projektin aikana auttelin muita myös aina
@@ -180,10 +180,10 @@
         Lisäksi minä tein meidän ryhmän kaikki google forms-lomakkeet. Alla on
         kuva meidän testisuunnitelmasta ja bugiraportista. Valitsin nämä, koska
         minun mielestä nämä kaksi ovat testauksen kannalta mielenkiintoisimmat
-        ja niistä näkee, mitä olemme testanneet ja mitä bugeja on havaittu.
+        ja niistä näkee, mitä olemme esimerkiksi testanneet ja mitä bugeja on
+        havaittu.
       </p>
     </div>
-
     <div class="image-area2" style="overflow-x: auto">
       <img src="./img/testisuunnitelma.PNG" alt="testisuunnitelma" />
     </div>
@@ -220,9 +220,12 @@
       <p>
         Toimin allergiskanneri-projektissa päätoimisena koodajana. Koodaajana
         korjasin bugeja, loin uutta koodia ja parantelin sovelluksemme ulkoasua.
-        Alapuolella näkyy allergia-valikoon, latausnäkymään, alert-ilmoitukseen,
-        tulosnäkymään ja ainesosaluetteloon tarvittuja koodinpätkiä. Valitsin
-        nämä koodinpätkät, koska näiden parissa olen työskennellyt eniten.
+        Koodajana opin, kuinka tärkeää on suunnitella asiat hyvin etukäteen.
+        Ilman hyviä Mocuppeja, joutuu käyttämään aikaa kokeillessa, mikä sopii
+        mihinkäkin paikkaan. Alapuolella näkyy allergia-valikoon,
+        latausnäkymään, alert-ilmoitukseen, tulosnäkymään ja ainesosaluetteloon
+        tarvittuja koodinpätkiä. Valitsin nämä koodinpätkät, koska näiden
+        parissa olen työskennellyt eniten.
       </p>
     </div>
     <div class="code-container">
@@ -368,7 +371,7 @@
       <p>
         Tietokannan sijaan me merkkasimme mahdollisia allergioita allergen
         serviceen. Listasta tuli aika pitkä ja vain pieni osa niistä on
-        näkyvillä. (ylin kuva.) Lista on pääasiassa minun tekemä, samoin
+        näkyvillä. Lista on pääasiassa minun tekemä, samoin
         categories.component.html tiedosto. Listassa jokaisella allergialla on
         oma id, nimi ja status. Aluksi status on false, mutta kun käyttäjä
         valitsee jonkun allergian, tämän status muuttuu trueksi ja tieto
@@ -475,7 +478,11 @@
       <p>
         Yläpuolella näkyy alert-ilmoitukseen tarvittu koodinpäpätkä. Käyttäjälle
         näytetään alert-ilmoitus, jos hän ei ole valinnut yhtäkään allergiaa
-        allergia-valikosta.
+        allergia-valikosta. Tämä ilmoitus toteutettiin siten, että kaikki
+        allergiatiedot haetaan ensin localstorgesta ja niiden arvo tarkistetaan.
+        Jos löytyy true arvo, allergeeni työnnetään taulukkoon. Tämän jälkeen
+        taulukko tarkastetaan. Jos taulukkon pituus on nolla, yhtäkään allergiaa
+        ei ole valittu. Tällöin käyttäjälle näyttään alert ilmoitus.
       </p>
     </div>
     <div class="Button-container">
@@ -563,7 +570,8 @@
         skannauksien välissä allegia-tietojaan, tulosnäkymä näyttää väärän
         tuloksen. Lisäksi ts-tiedostossa verrataan tuotetietoja merkattuihin
         allergia-tietoihin,jonka perusteella näytetään turvallinen tai ei
-        turvallinen näkymä.
+        turvallinen näkymä. Vertailutoiminnallisuus ei kuitenkaan näy tässä
+        koodinpätkässä.
       </p>
     </div>
     <div class="text-area2" id="result2">
@@ -650,8 +658,7 @@
         projektityöskentely ja githubin käyttö tuli uutena asiana. Angularia
         olen käyttänyt web-sovelluskehitys kurssilla, mutta hyvin ohjatusti,
         lähinnä seurannut opetusvideoita. Tällöin opin projektin, komponenttien
-        ja servicejen luomisen. Sain myös yleiskäsityksen angularista ja
-        angular-kirjastoista.
+        ja servicejen luomisen. Sain myös yleiskäsityksen angularista.
       </p>
     </div>
     <div class="text-area3">
@@ -662,11 +669,10 @@
         tutustua esimerkiksi Local storagen käyttöön, joka oli täysin uusi asia
         minulle. Lisäksi olin kiinnostunut latausnäkymän tekemisestä, sillä
         sellainen ominaisuus vaikutti minusta hyödylliseltä, enkä ole koskaan
-        tehnyt latausnäkymää. Samalla tuli harjoiteltua observablejen käyttöä. 
-        Myös ymmärrys komponenttien välisestä viestinnästä kasvoi.
-        Koen osaavani käyttää angularia suhteellisen vaivattomasti, vaikka
-        observablet ja subscribet tuottavatkin hieman tuskaa monimutkaisen
-        rakenteen takia.
+        tehnyt latausnäkymää. Samalla tuli harjoiteltua observablejen käyttöä.
+        Myös ymmärrys komponenttien välisestä viestinnästä kasvoi. Koen osaavani
+        käyttää angularia suhteellisen vaivattomasti, vaikka observablet ja
+        subscribet tuottavatkin hieman tuskaa monimutkaisen rakenteen takia.
       </p>
     </div>
     <div class="text-area3">
@@ -675,8 +681,8 @@
         jälkeen, mutta ainakin pientä kehitystä on tapahtunut. Pystyn
         kirjoittamaan esimerkiksi tutoriaalien perusteella koodia, etsimään
         esimerkkejä googlesta, sekä ymmärrän aika hyvin muiden kirjoittamaa
-        koodia. Lisäksi pystyn jonkun verran tuottamaan omaa koodia.
-        Minua kuitenkin huolestuttaa, ettei kirjoittamani koodi ole aina
+        koodia. Lisäksi pystyn jonkun verran tuottamaan omaa koodia. Minua
+        kuitenkin huolestuttaa, ettei kirjoittamani koodi ole aina
         arkitehtuurilta oikeanlaista koodia.
       </p>
     </div>

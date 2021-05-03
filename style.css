@@ -275,7 +275,7 @@ td {
     padding-right: 20%;
     padding-left: 20%;
   }
-  .text-area2 {
+  div.text-area2 {
     background-color: #343434;
     color: whitesmoke;
     text-align: left;
@@ -285,12 +285,16 @@ td {
     padding-right: 5%;
     padding-left: 5%;
   }
-  .text-area3 {
+  div.text-area3 {
     background-color: #343434;
     color: whitesmoke;
     text-align: left;
     padding-top: 25px;
     padding-right: 20%;
     padding-left: 20%;
+  }
+  div.image-area {
+    background-color: rgb(221, 167, 243);
+    padding: 170px;
   }
 }
